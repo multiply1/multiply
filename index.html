@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiply</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    header img {
+      width: 250px;
+      transition: transform 0.5s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-top: 20px;
+      background: linear-gradient(to right, #00f0ff, #ff00d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.description {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #ddd;
+    }
+
+    section.products {
+      padding: 50px 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product {
+      background: #111;
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+    }
+
+    .product h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      background: linear-gradient(to right, #00f0ff, #ff00d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .product p {
+      color: #ccc;
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .product .price {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .learn-more {
+      background-color: #fff;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .learn-more:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="YOUR-LOGO-URL-HERE" alt="Multiply Logo">
+  <h1>Expand your knowledge. Multiply your impact.</h1>
+  <p class="description">Unlock the secrets of crypto success with premium resources and expert insights.</p>
+
+  <a href="https://payhip.com/b/TOKEN" class="button" target="_blank">Utility Token Guide</a>
+  <a href="https://www.tiktok.com/@mult4ply" class="button" target="_blank">TikTok</a>
+  <a href="https://www.instagram.com/mult4ply" class="button" target="_blank">Instagram</a>
+</header>
+
+<section class="products">
+  <h2 style="font-size:2rem; margin-bottom: 30px;">Premium Products</h2>
+  <div class="product-grid">
+
+    <div class="product">
+      <h3>Crypto Mastery</h3>
+      <p>Complete guide to cryptocurrency trading and investment</p>
+      <div class="price">€197</div>
+      <a href="#" class="learn-more">Learn More</a>
+    </div>
+
+    <div class="product">
+      <h3>Wealth Strategies</h3>
+      <p>Advanced methods for building crypto wealth</p>
+      <div class="price">€247</div>
+      <a href="#" class="learn-more">Learn More</a>
+    </div>
+
+    <div class="product">
+      <h3>Elite Trading</h3>
+      <p>Premium trading strategies for serious investors</p>
+      <div class="price">€397</div>
+      <a href="#" class="learn-more">Learn More</a>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
