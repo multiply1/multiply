@@ -11,7 +11,7 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
       background-color: #000;
-      color: #fff;
+      color: #777;
       text-align: center;
     }
 
@@ -36,32 +36,32 @@
     h1 {
       font-size: 3rem;
       margin-top: 20px;
-      background: linear-gradient(to right, #00f0ff, #ff00d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #777;
     }
 
     p.description {
       max-width: 600px;
       margin: 20px auto;
       font-size: 1.2rem;
-      color: #aaa;
+      color: #777;
     }
 
     a.button {
       display: inline-block;
       margin: 10px;
       padding: 12px 30px;
-      background-color: white;
-      color: black;
+      background-color: #000;
+      color: #777;
       text-decoration: none;
       font-weight: bold;
+      border: 2px solid #777;
       border-radius: 30px;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
     a.button:hover {
-      background-color: #ddd;
+      background-color: #111;
+      color: #fff;
     }
 
     section.products {
@@ -90,53 +90,52 @@
     .product h3 {
       font-size: 1.5rem;
       margin-bottom: 10px;
-      background: linear-gradient(to right, #00f0ff, #ff00d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #777;
     }
 
     .product p {
-      color: #ccc;
+      color: #777;
       font-size: 1rem;
       margin-bottom: 10px;
     }
 
     .product .price {
       font-size: 1.2rem;
-      color: #fff;
+      color: #777;
       margin-bottom: 10px;
       font-weight: bold;
     }
 
     .learn-more {
-      background-color: #fff;
-      color: #000;
+      background-color: #000;
+      color: #777;
       padding: 10px 20px;
       border-radius: 25px;
+      border: 2px solid #777;
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
+      transition: background 0.3s ease, color 0.3s ease;
     }
 
     .learn-more:hover {
-      background-color: #ddd;
+      background-color: #111;
+      color: #fff;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="YOUR-LOGO-URL-HERE" alt="Multiply Logo">
-  <h1>Expand your knowledge. Multiply your impact.</h1>
-  <p class="description">Unlock the secrets of crypto success with premium resources and expert insights.</p>
+  <img src="logo.png" alt="Multiply Logo">
+  <h1>Unlock Premium Knowledge</h1>
+  <p class="description">Exclusive resources and guides designed to multiply your success.</p>
 
-  <a href="https://payhip.com/b/TOKEN" class="button" target="_blank">Utility Token Guide</a>
-  <a href="https://www.tiktok.com/@mult4ply" class="button" target="_blank">TikTok</a>
-  <a href="https://www.instagram.com/mult4ply" class="button" target="_blank">Instagram</a>
+  <a href="#products" class="button">Explore Guides</a>
 </header>
 
-<section class="products">
-  <h2 style="font-size:2rem; margin-bottom: 30px;">Premium Products</h2>
+<section class="products" id="products">
+  <h2 style="font-size:2rem; margin-bottom: 30px; color: #777;">Exclusive Guides</h2>
   <div class="product-grid">
 
     <div class="product">
@@ -147,16 +146,16 @@
     </div>
 
     <div class="product">
-      <h3>Wealth Strategies</h3>
-      <p>Advanced methods for building crypto wealth</p>
+      <h3>Wealth Blueprint</h3>
+      <p>Advanced methods for building long-term wealth</p>
       <div class="price">€247</div>
       <a href="#" class="learn-more">Learn More</a>
     </div>
 
     <div class="product">
-      <h3>Elite Trading</h3>
-      <p>Premium trading strategies for serious investors</p>
-      <div class="price">€397</div>
+      <h3>Multiply Mindset</h3>
+      <p>Develop a winning mindset for financial success</p>
+      <div class="price">€97</div>
       <a href="#" class="learn-more">Learn More</a>
     </div>
 
