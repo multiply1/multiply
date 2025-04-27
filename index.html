@@ -16,7 +16,7 @@
     }
 
     header {
-      min-height: 100vh;
+      min-height: 70vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -26,141 +26,99 @@
 
     header img {
       width: 250px;
-      transition: transform 0.5s ease;
-    }
-
-    header img:hover {
-      transform: scale(1.1);
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 3rem;
-      margin-top: 20px;
-      color: #777;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
 
     p.description {
       max-width: 600px;
-      margin: 20px auto;
+      margin: 10px auto 30px;
       font-size: 1.2rem;
-      color: #777;
     }
 
-    a.button {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 30px;
-      background-color: #000;
-      color: #777;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid #777;
-      border-radius: 30px;
-      transition: background 0.3s ease, color 0.3s ease;
+    .link-section {
+      margin: 30px 0;
     }
 
-    a.button:hover {
+    .link-section a {
+      color: #777;
+      text-decoration: underline;
+      display: block;
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    section.newsletter {
+      padding: 40px 20px;
       background-color: #111;
-      color: #fff;
+      border-top: 1px solid #333;
     }
 
-    section.products {
-      padding: 50px 20px;
+    .newsletter h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      max-width: 1000px;
-      margin: auto;
+    .newsletter input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
     }
 
-    .product {
-      background: #111;
-      padding: 20px;
-      border-radius: 15px;
-      transition: transform 0.3s ease;
-    }
-
-    .product:hover {
-      transform: scale(1.05);
-    }
-
-    .product h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #777;
-    }
-
-    .product p {
-      color: #777;
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-
-    .product .price {
-      font-size: 1.2rem;
-      color: #777;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    .learn-more {
-      background-color: #000;
-      color: #777;
+    .newsletter button {
       padding: 10px 20px;
-      border-radius: 25px;
-      border: 2px solid #777;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      transition: background 0.3s ease, color 0.3s ease;
+      background-color: #000;
+      color: #777;
+      border: 1px solid #777;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
     }
 
-    .learn-more:hover {
-      background-color: #111;
+    .newsletter button:hover {
+      background-color: #222;
       color: #fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <img src="logo.png" alt="Multiply Logo">
+  <img src="YOUR-LOGO-URL-HERE" alt="Multiply Logo">
   <h1>Unlock Premium Knowledge</h1>
   <p class="description">Exclusive resources and guides designed to multiply your success.</p>
 
-  <a href="#products" class="button">Explore Guides</a>
+  <div class="link-section">
+    <p><strong>Utility Guide:</strong> <a href="https://payhip.com/b/bpIS8" target="_blank">https://payhip.com/b/bpIS8</a></p>
+  </div>
 </header>
 
-<section class="products" id="products">
-  <h2 style="font-size:2rem; margin-bottom: 30px; color: #777;">Exclusive Guides</h2>
-  <div class="product-grid">
-
-    <div class="product">
-      <h3>Crypto Mastery</h3>
-      <p>Complete guide to cryptocurrency trading and investment</p>
-      <div class="price">€197</div>
-      <a href="#" class="learn-more">Learn More</a>
-    </div>
-
-    <div class="product">
-      <h3>Wealth Blueprint</h3>
-      <p>Advanced methods for building long-term wealth</p>
-      <div class="price">€247</div>
-      <a href="#" class="learn-more">Learn More</a>
-    </div>
-
-    <div class="product">
-      <h3>Multiply Mindset</h3>
-      <p>Develop a winning mindset for financial success</p>
-      <div class="price">€97</div>
-      <a href="#" class="learn-more">Learn More</a>
-    </div>
-
-  </div>
+<section class="newsletter">
+  <h2>Join Our Newsletter</h2>
+  <p>Get notified about new guides and special offers!</p>
+  <form action="#" method="POST">
+    <input type="email" placeholder="Your email address" required>
+    <br>
+    <button type="submit">Subscribe</button>
+  </form>
 </section>
+
+<footer>
+  &copy; 2025 Multiply. All rights reserved.
+</footer>
 
 </body>
 </html>
